@@ -595,66 +595,205 @@ h2 {
     padding: 2rem 0;
 }
 
-/* Responsive Design */
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    /* Sections */
     .section {
         padding: 2rem 1rem;
     }
 
+    /* Hero Section */
     #hero {
         padding: 1rem;
     }
 
     .hero-content {
         padding: 1.5rem;
-        margin-bottom: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .hero-message {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 0.8rem 0;
     }
 
-    #kiss {
-        padding-top: 1.5rem;
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
     }
 
-    .kiss-container {
-        min-height: 150px;
-        padding: 1.5rem 0;
+    /* Gallery Section */
+    .swiper-slide {
+        width: 250px !important;
+        padding: 0.8rem;
     }
 
-    h1 {
-        font-size: 2.8rem;
+    .polaroid img {
+        height: 200px;
     }
 
-    h2 {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
+    .polaroid-caption {
+        font-size: 1rem;
+        padding: 0.4rem;
     }
 
+    /* Videos Section */
     .videos-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 1.5rem;
+        gap: 1.5rem;
+        padding: 1rem;
     }
-    
+
     .video-wrapper {
-        max-width: 300px;
-        aspect-ratio: 9/16;
+        max-width: 280px;
+        margin: 0 auto;
     }
 
-    #notes {
-        padding: 1.5rem 0;
-    }
-
-    .notes-container {
+    .video-title {
+        font-size: 1.2rem;
         padding: 0.8rem;
-        gap: 1rem;
+    }
+
+    /* Notes Section */
+    .notes-container {
+        padding: 1rem;
     }
 
     .note {
         padding: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Kiss Section */
+    .kiss-container {
+        padding: 1.5rem;
+    }
+
+    .kiss-button {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    #kissVideo {
+        height: 70vh;
+        width: auto;
+        max-width: 95vw;
+    }
+
+    .love-text {
+        font-size: 2rem;
+        top: 15%;
+    }
+
+    /* Music Toggle */
+    .music-toggle {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    .music-toggle i {
+        font-size: 1.2rem;
+    }
+
+    /* Password Modal */
+    .modal-content {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .modal-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .modal-content input {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .modal-content button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Floating Hearts */
+    .floating-heart {
+        font-size: 16px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-message {
+        font-size: 1.1rem;
+    }
+
+    .swiper-slide {
+        width: 220px !important;
+    }
+
+    .video-wrapper {
+        max-width: 250px;
+    }
+
+    .kiss-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 1.2rem;
+    }
+
+    .love-text {
+        font-size: 1.8rem;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+    #hero {
+        padding: 1rem;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero-message {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+    }
+
+    #kissVideo {
+        height: 90vh;
+        width: auto;
+    }
+
+    .love-text {
+        font-size: 1.8rem;
+        top: 10%;
     }
 }
 
